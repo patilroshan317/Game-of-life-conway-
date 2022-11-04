@@ -1,12 +1,14 @@
-const canvas = document.querySelector('canvas');
+ const canvas = document.querySelector('canvas');
 const ctx = canvas.getContext('2d');
+const run =document.getElementById("run");
+const reset = document.getElementById("reset")
 ctx.moveTo(0,0);
 ctx.lineTo(500,500);
 ctx.stroke();
 
 const resolution = 10;
-canvas.width = 500;
-canvas.height = 500;
+canvas.width = 400;
+canvas.height = 400;
 
 const COLS = canvas.width / resolution;
 const ROWS = canvas.height / resolution;
